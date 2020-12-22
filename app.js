@@ -34,7 +34,8 @@ app.get('/', (req, res) => {
 
 app.post('/api/send_email', (req, res) => {
     const email = req.body.email;
-    const calender = req.body.calender
+    const calender = req.body.calendar
+    console.log(calender)
     const mailOptions = {
         from: 'rudomaru25@email.com', // sender address
         to: email, // list of receivers
