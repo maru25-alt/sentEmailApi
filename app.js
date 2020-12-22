@@ -39,7 +39,7 @@ app.post('/api/send_email', (req, res) => {
         from: 'rudomaru25@email.com', // sender address
         to: email, // list of receivers
         subject: 'Calender values', // Subject line
-        text: `Messahe from Calender: ${calender}`// plain text body
+        text: `Message from Calender: ${calender}`// plain text body
       };
       transporter.sendMail(mailOptions, function (err, info) {
          if(err)
